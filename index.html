@@ -23,6 +23,9 @@
   <!-- Favicon -->
   <link rel="icon" href="https://yourwebsite.com/favicon.ico" type="image/x-icon">
   
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -51,7 +54,12 @@
       <div class="output-box">
         <div class="output-header">
           <h2>Formatted FetchXML</h2>
-          <button id="copyButton">📋 Copy</button>
+          <div class="output-actions">
+            <button id="copyButton">📋 Copy</button>
+            <button id="maximizeButton" title="Maximize">
+              <i class="fas fa-expand"></i>
+            </button>
+          </div>
         </div>
         <pre id="formattedOutput"></pre>
       </div>
